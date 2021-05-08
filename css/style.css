@@ -1,0 +1,493 @@
+/*------------- Common css part goes here -------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 0.8;
+}
+h1,h2,h3,h4,h5,h6,a {
+    font-family: 'Raleway', sans-serif;
+}
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*------------- Navbar css part goes here -------------*/
+.navbar {
+	
+	padding-top: 0;
+	padding-bottom: 0;
+    border: 1px solid rgba(254, 199, 0, 0.20);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+    padding: 0 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0;
+    position: relative;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all linear .4s;
+    line-height: 110px;
+}
+.navbar-expand-lg .navbar-nav .nav-link::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #fec600;
+    left: 0;
+    bottom: -1.5px;
+    opacity: 0;
+    transition: all linear .4s;
+
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #fec600;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+
+}
+
+
+/*------------- Banner css part goes here -------------*/
+#banner {
+    position: relative;
+}
+#banner i:hover {
+    background-color: #fec600;
+}
+#banner i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 24px;
+    color: #0c0d12;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    transition: all linear .5s;
+    cursor:pointer;
+}
+#banner .b-left {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+#banner .b-right {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+
+
+.slider-item {
+    background-position: center!important;
+    background-repeat: no-repeat;
+    background-size: cover!important;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0 100%);
+}
+.slider-item::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+.banner-content {
+    height: 100vh;
+    position: relative;
+    z-index: 99;
+}
+.banner-text h3 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+}
+.banner-text h1 {
+    font-size: 55px;
+    color: #fec600;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.banner-text p {
+    color: #f1f1f1;
+    font-weight: 400;
+    line-height: 24px;
+    padding:0 30px;
+    padding-bottom: 60px;
+}
+.banner-text a {
+    color: #ffff;
+    font-weight: 500;
+    padding:20px 20px;
+    font-size: 16px;
+    border:1px solid #fff;
+    text-transform: uppercase;
+    margin:0 10px;
+    transition: all linear .5s;
+}
+.banner-text a.ancor-2 {
+    padding: 20px 34px;
+}
+.banner-text a.ancor-1 {
+    background-color: #fec600;
+    color: #222;
+    border-color: #fec600;
+    transition: all linear .5s;
+
+}
+.banner-text a:hover {
+    background-color: #fec600;
+    color: #222;
+    border-color: #fec600;
+    
+
+}
+.banner-text a.ancor-1:hover {
+    border:1px solid #fff;
+    color: #ffff;
+    background-color: transparent;
+}
+
+/*------------- About css part goes here -------------*/
+.about-main {
+    position: relative;
+}
+.about-head h2 {
+    color: #111111;
+    padding-bottom: 15px;
+    
+}
+.about-head p {
+    color: #353535;
+    line-height: 24px;
+    padding: 0 364px;
+}
+.about-cirle-main {
+    width: 370px;
+    height: 370px;
+    border: 1px solid #444444;
+    margin: 0 auto;
+    margin-top: 300px;
+    border-radius: 50%;
+    margin-bottom: 240px;
+}
+
+.about-cirle-item {
+	position: relative;
+	width: 320px;
+	height: 320px;
+	margin-left: 21px;
+	margin-top: 21px;
+}
+.about-cirle-item img {
+    
+    border-radius: 50%;
+}
+.about-left {
+    width: 370px;
+    background: #eeeeee;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    left: 60px;
+    transition: all linear .3s;
+    
+    
+ 
+     
+   
+       
+       
+}
+
+.about-left::after {
+        position: absolute;
+        content: '';
+        height: 40px;
+        width: 40px;
+        right: -10px;
+        top: 40%;
+        transform: translateY(-40%);
+        background: #eeeeee;
+        transform: rotate(45deg);
+        
+}
+.about-left::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    right: -12%;
+   
+    top: 50%;
+    transform: translateY(-50%);
+    background: #353535;
+    border-radius: 50%;
+    z-index: 9;
+    transition: all linear .3s;
+   
+}
+.about-left:hover {
+    box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.3); 
+
+}
+.about-left:hover::before {
+    background-color: #fec600;
+}
+
+.about-left h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    padding: 0 30px;
+    padding-top: 39px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+}
+.about-left p {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    line-height: 24px;
+    padding: 0 30px;
+    padding-bottom: 23px;
+}
+/*------About right----------*/
+.about-right {
+    width: 370px;
+    background: #eeeeee;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    transition: all linear .3s;
+    
+}
+
+.about-right::after {
+        position: absolute;
+        content: '';
+        height: 40px;
+        width: 40px;
+        left: -10px;
+        top: 40%;
+        transform: translateY(-40%);
+        background: #eeeeee;
+        transform: rotate(45deg);
+}
+.about-right::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: -12%;
+   
+    top: 50%;
+    transform: translateY(-50%);
+    background: #353535;
+    border-radius: 50%;
+    z-index: 9;
+    transition: all linear .3s;
+   
+}
+.about-right:hover {
+    box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.3); 
+
+}
+.about-right:hover::before {
+    background-color: #fec600;
+}
+
+.about-right h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    padding: 0 30px;
+    padding-top: 39px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+}
+.about-right p {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    line-height: 24px;
+    padding: 0 30px;
+    padding-bottom: 23px;
+}
+/*------About Top----------*/
+.about-top {
+    width: 370px;
+    background: #eeeeee;
+    position: absolute;
+    top: -245px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+    
+}
+
+.about-top::after {
+        position: absolute;
+        content: '';
+        height: 40px;
+        width: 40px;
+        left: 44.5%;
+        /* transform: translateX(-45%); */
+        bottom: -10px;
+        background: #eeeeee;
+        transform: rotate(45deg);
+}
+.about-top::before {
+        position: absolute;
+        content: '';
+        height: 20px;
+        width: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -22%;
+        background: #353535;
+        border-radius: 50%;
+        z-index: 9;
+        transition: all linear .3s;
+       
+}
+.about-top:hover {
+    box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.3); 
+
+}
+.about-top:hover::before {
+    background-color: #fec600;
+}
+
+.about-top h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    padding: 0 30px;
+    padding-top: 39px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+}
+.about-top p {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    line-height: 24px;
+    padding: 0 30px;
+    padding-bottom: 23px;
+}
+/*------About Top----------*/
+.about-bottom {
+    width: 370px;
+    background: #eeeeee;
+    position: absolute;
+    bottom: -245px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+    
+}
+
+.about-bottom::after {
+        position: absolute;
+        content: '';
+        height: 40px;
+        width: 40px;
+        left: 44.5%;
+        transform: translateX(-45%);
+        top: -10px;
+        background: #eeeeee;
+        transform: rotate(45deg);
+}
+.about-bottom::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -22%;
+    background: #353535;
+    border-radius: 50%;
+    z-index: 9;
+    transition: all linear .3s;
+   
+}
+.about-bottom:hover {
+    box-shadow: 0px 3px 9px 1px rgba(0,0,0,0.3); 
+
+}
+.about-bottom:hover::before {
+    background-color: #fec600;
+}
+
+.about-bottom h3 {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #111111;
+    padding: 0 30px;
+    padding-top: 39px;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+}
+.about-bottom p {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    line-height: 24px;
+    padding: 0 30px;
+    padding-bottom: 23px;
+}
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
+/*------------- Common css part goes here -------------*/
